@@ -15,6 +15,11 @@
 		5B658A0721747F65008327FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B658A0621747F65008327FA /* main.m */; };
 		5B658A1121747F65008327FA /* DealImage_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B658A1021747F65008327FA /* DealImage_DemoTests.m */; };
 		5B658A1C21747F65008327FA /* DealImage_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B658A1B21747F65008327FA /* DealImage_DemoUITests.m */; };
+		5B658A2C21748306008327FA /* EditPictureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B658A2A21748306008327FA /* EditPictureVC.m */; };
+		5B658A2D21748306008327FA /* EditPictureVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B658A2B21748306008327FA /* EditPictureVC.xib */; };
+		5B658A2F21748492008327FA /* pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B658A2E21748492008327FA /* pic.jpg */; };
+		5B658A3221748EA4008327FA /* UIImage+SubImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B658A3021748EA4008327FA /* UIImage+SubImage.m */; };
+		5B69792723CEB52500AC5707 /* KKTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B69792623CEB52500AC5707 /* KKTimer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,14 @@
 		5B658A1721747F65008327FA /* DealImage_DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DealImage_DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B658A1B21747F65008327FA /* DealImage_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DealImage_DemoUITests.m; sourceTree = "<group>"; };
 		5B658A1D21747F65008327FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B658A2921748306008327FA /* EditPictureVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditPictureVC.h; sourceTree = "<group>"; };
+		5B658A2A21748306008327FA /* EditPictureVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditPictureVC.m; sourceTree = "<group>"; };
+		5B658A2B21748306008327FA /* EditPictureVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditPictureVC.xib; sourceTree = "<group>"; };
+		5B658A2E21748492008327FA /* pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic.jpg; sourceTree = "<group>"; };
+		5B658A3021748EA4008327FA /* UIImage+SubImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SubImage.m"; sourceTree = "<group>"; };
+		5B658A3121748EA4008327FA /* UIImage+SubImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SubImage.h"; sourceTree = "<group>"; };
+		5B69792523CEB52500AC5707 /* KKTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKTimer.h; sourceTree = "<group>"; };
+		5B69792623CEB52500AC5707 /* KKTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKTimer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +114,19 @@
 		5B6589F621747F58008327FA /* DealImage_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				5B69792523CEB52500AC5707 /* KKTimer.h */,
+				5B69792623CEB52500AC5707 /* KKTimer.m */,
+				5B658A3121748EA4008327FA /* UIImage+SubImage.h */,
+				5B658A3021748EA4008327FA /* UIImage+SubImage.m */,
+				5B658A2E21748492008327FA /* pic.jpg */,
 				5B6589F721747F58008327FA /* AppDelegate.h */,
 				5B6589F821747F58008327FA /* AppDelegate.m */,
 				5B6589FA21747F58008327FA /* ViewController.h */,
 				5B6589FB21747F58008327FA /* ViewController.m */,
 				5B6589FD21747F58008327FA /* Main.storyboard */,
+				5B658A2921748306008327FA /* EditPictureVC.h */,
+				5B658A2A21748306008327FA /* EditPictureVC.m */,
+				5B658A2B21748306008327FA /* EditPictureVC.xib */,
 				5B658A0021747F65008327FA /* Assets.xcassets */,
 				5B658A0221747F65008327FA /* LaunchScreen.storyboard */,
 				5B658A0521747F65008327FA /* Info.plist */,
@@ -236,8 +257,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B658A0421747F65008327FA /* LaunchScreen.storyboard in Resources */,
+				5B658A2D21748306008327FA /* EditPictureVC.xib in Resources */,
 				5B658A0121747F65008327FA /* Assets.xcassets in Resources */,
 				5B6589FF21747F58008327FA /* Main.storyboard in Resources */,
+				5B658A2F21748492008327FA /* pic.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B658A3221748EA4008327FA /* UIImage+SubImage.m in Sources */,
 				5B6589FC21747F58008327FA /* ViewController.m in Sources */,
+				5B658A2C21748306008327FA /* EditPictureVC.m in Sources */,
+				5B69792723CEB52500AC5707 /* KKTimer.m in Sources */,
 				5B658A0721747F65008327FA /* main.m in Sources */,
 				5B6589F921747F58008327FA /* AppDelegate.m in Sources */,
 			);
