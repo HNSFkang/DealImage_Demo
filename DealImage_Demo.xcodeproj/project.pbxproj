@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B2254E123D6D3CF00AA78ED /* KKCustomTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2254DD23D6D3CF00AA78ED /* KKCustomTV.m */; };
+		5B2254E223D6D3CF00AA78ED /* KKTestTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2254E023D6D3CF00AA78ED /* KKTestTVCell.m */; };
 		5B6589F921747F58008327FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6589F821747F58008327FA /* AppDelegate.m */; };
 		5B6589FC21747F58008327FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6589FB21747F58008327FA /* ViewController.m */; };
 		5B6589FF21747F58008327FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6589FD21747F58008327FA /* Main.storyboard */; };
@@ -40,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B2254DD23D6D3CF00AA78ED /* KKCustomTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCustomTV.m; sourceTree = "<group>"; };
+		5B2254DE23D6D3CF00AA78ED /* KKTestTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTestTVCell.h; sourceTree = "<group>"; };
+		5B2254DF23D6D3CF00AA78ED /* KKCustomTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCustomTV.h; sourceTree = "<group>"; };
+		5B2254E023D6D3CF00AA78ED /* KKTestTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTestTVCell.m; sourceTree = "<group>"; };
 		5B6589F421747F58008327FA /* DealImage_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DealImage_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B6589F721747F58008327FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5B6589F821747F58008327FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -91,6 +97,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B2254DC23D6D3CF00AA78ED /* customTF */ = {
+			isa = PBXGroup;
+			children = (
+				5B2254DF23D6D3CF00AA78ED /* KKCustomTV.h */,
+				5B2254DD23D6D3CF00AA78ED /* KKCustomTV.m */,
+				5B2254DE23D6D3CF00AA78ED /* KKTestTVCell.h */,
+				5B2254E023D6D3CF00AA78ED /* KKTestTVCell.m */,
+			);
+			path = customTF;
+			sourceTree = "<group>";
+		};
 		5B6589EB21747F58008327FA = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +131,7 @@
 		5B6589F621747F58008327FA /* DealImage_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				5B2254DC23D6D3CF00AA78ED /* customTF */,
 				5B69792523CEB52500AC5707 /* KKTimer.h */,
 				5B69792623CEB52500AC5707 /* KKTimer.m */,
 				5B658A3121748EA4008327FA /* UIImage+SubImage.h */,
@@ -286,6 +304,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B658A3221748EA4008327FA /* UIImage+SubImage.m in Sources */,
+				5B2254E223D6D3CF00AA78ED /* KKTestTVCell.m in Sources */,
+				5B2254E123D6D3CF00AA78ED /* KKCustomTV.m in Sources */,
 				5B6589FC21747F58008327FA /* ViewController.m in Sources */,
 				5B658A2C21748306008327FA /* EditPictureVC.m in Sources */,
 				5B69792723CEB52500AC5707 /* KKTimer.m in Sources */,
