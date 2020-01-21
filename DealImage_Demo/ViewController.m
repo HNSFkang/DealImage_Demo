@@ -33,7 +33,8 @@
 }
 - (void)configTableView {
     CGRect screenBounds = UIScreen.mainScreen.bounds;
-    CGRect tableFrame = CGRectMake(0, 0, screenBounds.size.width, screenBounds.size.height);
+    CGFloat originY = screenBounds.size.height / 2;
+    CGRect tableFrame = CGRectMake(0, originY, screenBounds.size.width, screenBounds.size.height - originY);
     UITableView *tableView = [[UITableView alloc] initWithFrame:tableFrame style:UITableViewStylePlain];
 //    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     tableView.backgroundColor = [UIColor whiteColor];
@@ -52,7 +53,6 @@
     
     KKTestTVCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([KKTestTVCell class])];
     
-    cell.tv.delegate = self;
     
     return cell;
 }

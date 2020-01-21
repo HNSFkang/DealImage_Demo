@@ -20,6 +20,20 @@
     [super awakeFromNib];
     // Initialization code
 }
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        [self configSubviews];
+    }
+    return  self;
+}
+- (void)configSubviews {
+    [self.contentView addSubview:self.tv];
+}
+- (void)layoutSubviews{
+    [super layoutSubviews];
+
+}
 - (BOOL)textViewShouldBeginEditing:(UITextView *)textView{
     // 即将编辑时 把这个当做 点击 响应使用代理或者block 传出去
     
